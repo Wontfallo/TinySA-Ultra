@@ -12,7 +12,7 @@ Real-time sweeps · Rolling waterfall · Trace math · Multi-markers · Presets 
 ![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?logo=windows&logoColor=white)
 ![Hardware](https://img.shields.io/badge/Hardware-TinySA%20%2F%20TinySA%20Ultra-cyan)
 
-<img src="docs/screenshots/main-window.png" alt="TinySA Ultra Pro Suite — main window showing live sweep, max/min hold, averaging and trace math over the 2.4 GHz Wi-Fi band with a viridis waterfall" width="100%">
+<img src="screenshots/Screenshot%202026-08-13%20034710.png" alt="TinySA Ultra Pro Suite — main window showing live sweep, max/min hold, averaging and trace math over the 2.4 GHz Wi-Fi band with a viridis waterfall" width="100%">
 
 *Live capture of the 2.4 GHz Wi-Fi band: five simultaneous traces (Live, Max Hold, Min Hold, Average, Trace Math), a peak marker parked on an active Wi-Fi channel, and a rolling viridis waterfall underneath.*
 
@@ -26,9 +26,9 @@ Real-time sweeps · Rolling waterfall · Trace math · Multi-markers · Presets 
 - **Five simultaneous traces**: Live, Max Hold, Min Hold, rolling Average (configurable sweep count), and a computed Math trace (e.g. `T1 − T2`).
 - **Rolling waterfall / spectrogram** with selectable colormaps (viridis, plasma, inferno, and more), adjustable floor/ceiling, and auto-contrast.
 - **Six markers with peak search** — snap to max/min, hop to next peak left/right/strongest, auto peak tracking, delta-mode readouts relative to Marker 1, and a level-crossing alarm.
-- **Frequency presets** for the bands you actually look at: Wi-Fi 2.4/5 GHz, Bluetooth, FM broadcast, 2 m / 6 m ham, ISM 433/868/915 MHz, GPS L1, cellular 700/850/1900 MHz, 5G mid-band — plus your own saved custom ranges. Band presets overlay channel gridlines (Wi-Fi channels, LoRa centers) on the plot.
+- **Frequency presets** for the bands you actually look at: Wi-Fi 2.4/5 GHz, Bluetooth, FM broadcast, 2 m / 6 m ham, ISM 433/868/915 MHz, GPS L1, cellular 700/850/1900 MHz, 5G mid-band — plus your own.
 - **Data recorder**: capture sweep sessions to file and play them back, export CSV/JSON, and save PNG snapshots of the plot.
-- **Deep hardware access**: signal generator control, battery/hardware info, spur removal, LNA preamp, attenuation, RBW selection, input port switching, and a raw terminal console speaking the TinySA serial protocol.
+- **Deep hardware access**: signal generator control, battery/hardware info, spur removal, LNA preamp, attenuation, RBW selection, input port switching, and a raw terminal console speaking the TinySA protocol.
 - **Demo / simulation mode** — explore the full UI with a simulated RF environment, no hardware required.
 
 ## The dashboard at a glance
@@ -108,7 +108,7 @@ More detail lives in the [Technical Blueprint](TECHNICAL_BLUEPRINT.md).
 
 ## Hardware notes
 
-Talks the TinySA serial protocol directly: `sweep`, `rbw`, `attenuate`, `lna`, `spur`, `input`, and continuous `threadsweep` streaming. Works with TinySA (100 kHz – 960 MHz) and TinySA Ultra (100 kHz – 6 GHz) firmware.
+Talks the TinySA serial protocol directly: `sweep`, `rbw`, `attenuate`, `lna`, `spur`, `input`, and continuous `threadsweep` streaming. Works with TinySA (100 kHz – 960 MHz) and TinySA Ultra (100 kHz – 4 GHz).
 
 ## License
 
